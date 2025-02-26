@@ -1,0 +1,88 @@
+/* Seção de Vídeo */
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Maior largura */
+    width: 100%;
+    margin: 60px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    gap: 30px;
+}
+
+/* Vídeo Maior para Computadores */
+.video-container {
+    width: 65%; /* Ocupa mais espaço */
+    position: relative;
+    padding-top: 36%; /* Ajuste da proporção para manter formato widescreen */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto ao lado do vídeo */
+.video-text {
+    width: 35%;
+    text-align: left;
+}
+
+.video-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.video-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Botão Estilizado */
+.video-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #6a11cb;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.video-btn:hover {
+    background: #4a0dab;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .video-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .video-container {
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .video-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

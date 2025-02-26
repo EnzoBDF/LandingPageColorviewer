@@ -1,0 +1,111 @@
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);;
+}
+
+
+.secao-cards {
+    max-width: 80%;
+    width: 100%;
+
+    border-radius: 15px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    
+}
+
+/* Container de Cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #e91e63;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Estilização do Carrossel */
+.carrossel {
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel .card {
+    min-width: 100%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.botao {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao.ativo {
+    background: #e91e63;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards-container {
+        display: none;
+    }
+
+    .carrossel {
+        display: block;
+    }
+}

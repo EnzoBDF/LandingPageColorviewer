@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box; /* Garante que padding e border não afetem a largura */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;  /* Impede a rolagem horizontal */
+    overflow-y: auto;    /* Permite rolagem vertical */
+    margin: 0;
+    font-family: "Poppins";
+    width: 100%; /* Garante que o body ocupe 100% da largura da tela */
+    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+    position: relative;
+  }
+  
+  header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 100vw;
+      height: 5rem;
+      box-shadow: 0px 10px 10px #3333334f;
+      position: fixed;
+      background-color: azure;
+      color: #20BF55;
+  }
+  
+  .start {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundMove 10s infinite alternate ease-in-out;
+  }
+  
+  .title-start {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-left: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .title-start h1 {
+    font-size: 5rem;
+    color: azure;
+    margin-bottom: -1.5rem;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .title-start p {
+    font-size: 1.5rem;
+    color: azure;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .title-start button {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #e91e63;
+    color: aliceblue;
+    font: 900;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  .title-start button:hover {
+    background-color: #0c4e22;
+    background-color: #991541;
+    transform: scale(1.05);
+  }
+  
+  /* Adiciona um brilho animado ao botão */
+  .title-start button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.3rem;
+    background-color: #e91e6271;
+    z-index: -1;
+    filter: blur(8px);
+    animation: glow 3s infinite alternate;
+  }
+  
+  .highlight-cyan {
+    color: cyan;
+}
+.highlight-magenta {
+    color: magenta;
+}
+.highlight-yellow {
+    color: yellow;
+}
+.highlight-black {
+    color: black;
+}
+
+
+  /* Animações */
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+  }
+  
+  @keyframes backgroundMove {
+    0% {
+        background-position: center;
+    }
+    100% {
+        background-position: top;
+    }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .title-start {
+        width: 80vw;
+        margin-left: 0;
+    }
+  
+    .title-start h1 {
+        font-size: 3rem;
+    }
+  
+    .title-start p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+  
+    .title-start button {
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title-start h1 {
+        font-size: 2.5rem;
+    }
+  
+    .title-start p {
+        font-size: 0.9rem;
+    }
+  
+    .title-start button {
+        width: 10rem;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+  }

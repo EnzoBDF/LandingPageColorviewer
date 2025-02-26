@@ -1,0 +1,332 @@
+.feature-section {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+.feature-card {
+    position: relative;
+    width: 45%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.02);
+}
+
+.feature-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.feature-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 80%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover .feature-content {
+    transform: translateY(-5px);
+}
+
+.featurebutton2{
+    display: inline-block;
+    padding: 14px 28px;
+    background: #fff;
+    color: #FF416C;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.feature-button {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+}
+
+.feature-button i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.feature-card:hover .feature-button {
+    background-color: #e91e63;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.tag{
+    background-color: #6c5ce7;
+}
+
+.arrow-button{
+    background-color: #6c5ce7;
+}
+
+/* Estilização do Texto ao lado */
+.feature-text {
+    width: 45%;
+    text-align: left;
+}
+
+.feature-text h2 {
+    font-size: 2.2rem;
+    color: #6c5ce7;
+    margin-bottom: 1rem;
+}
+
+.feature-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #8f123c;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 1024px) {
+    .feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-card,
+    .feature-text {
+        width: 80%;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+    }
+
+    .feature-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 90%;
+    }
+
+    .feature-text {
+        width: 90%;
+    }
+
+    .cta-button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-card {
+        width: 100%;
+    }
+
+    .feature-text {
+        width: 100%;
+    }
+
+    .feature-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+    }
+}
+
+.custom-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+    transform: scale(1.02);
+}
+
+/* Imagem de fundo */
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+/* Estilização do balão */
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 2rem;
+    border-radius: 25px;
+    max-width: 70%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover .card-content {
+    transform: translateY(-5px);
+}
+
+/* Efeito de recorte no balão */
+
+
+/* Tag no topo */
+.tag {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: 0.8rem;
+}
+
+.tag i {
+    margin-right: 0.5rem;
+    color: white;
+}
+
+/* Título */
+.card-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E1E1E;
+    line-height: 1.4;
+}
+
+/* Botão circular */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+}
+
+.arrow-button i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-container:hover .arrow-button {
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 1024px) {
+    .card-content {
+        max-width: 85%;
+    }
+
+    .card-content h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-content {
+        max-width: 90%;
+    }
+
+    .card-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .arrow-button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        width: 90%;
+    }
+
+    .card-content {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .card-content h2 {
+        font-size: 1rem;
+    }
+
+    .arrow-button {
+        width: 35px;
+        height: 35px;
+    }
+}
