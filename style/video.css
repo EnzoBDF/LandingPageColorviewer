@@ -51,7 +51,7 @@
 .video-btn {
     display: inline-block;
     padding: 14px 28px;
-    background: #6a11cb;
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
     color: white;
     font-size: 20px;
     font-weight: bold;
