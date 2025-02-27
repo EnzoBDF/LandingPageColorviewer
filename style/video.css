@@ -1,4 +1,4 @@
-/* Seção de Vídeo */
+
 .video-section {
     display: flex;
     align-items: center;
@@ -10,6 +10,7 @@
     border-radius: 15px;
     padding: 40px;
     gap: 30px;
+    margin-bottom: 10px;
 }
 
 /* Vídeo Maior para Computadores */
@@ -33,11 +34,12 @@
 .video-text {
     width: 35%;
     text-align: left;
+
 }
 
 .video-text h2 {
-    font-size: 28px;
-    color: #333;
+       font-size: 2.2rem;
+    color: #6c5ce7;
     margin-bottom: 15px;
 }
 
@@ -63,7 +65,7 @@
 }
 
 .video-btn:hover {
-    background: #4a0dab;
+    background: linear-gradient(90deg, #483d9e, #5283b4);
     transform: scale(1.05);
 }
 

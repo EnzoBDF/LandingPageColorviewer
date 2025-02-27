@@ -1,0 +1,117 @@
+/* Seção Como Funciona */
+.how-it-works {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 50px 30px;
+    text-align: center;
+ 
+    border-radius: 15px;
+
+}
+
+.how-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6c5ce7;
+    margin-bottom: 10px;
+}
+
+.how-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Container dos Passos */
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Estilização de cada Passo */
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 32%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Ícones dos Passos */
+.icon-box {
+    font-size: 42px;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cores diferentes para cada passo */
+.step-one {
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
+}
+
+.step-two {
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
+}
+
+.step-three {
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
+}
+
+/* Títulos e Texto dos Passos */
+.step h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Botão de Teste */
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #483d9e, #5283b4);
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

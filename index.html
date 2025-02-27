@@ -30,6 +30,10 @@
   <link rel="stylesheet" href="./style/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link
@@ -47,14 +51,25 @@
   <!--  <header>
         <h1>Virada 360</h1>
     </header> -->
-  <section class="start">
-    <div class="title-start">
-      <h1 class="title">Color<span class="highlight-cyan">V</span><span class="highlight-magenta">i</span><span
-          class="highlight-yellow">e</span><span class="highlight-black">w</span>er</h1>
-      <p>Sua ferramenta feita para o cálculo de custos de cópias para a sua gráfica</p>
-      <button onclick="scrollToEbook()">Quero conhecer</button>
-    </div>
+    <section class="start">
+      <div class="content">
+          <div class="text-box">
+            <h1 class="title">Color<span class="highlight-cyan">V</span><span class="highlight-magenta">i</span><span
+              class="highlight-yellow">e</span><span class="highlight-black">w</span>er</h1>
+              <p class="subtitle">Transforme a forma como sua gráfica gerencia custos de impressão.</p>
+              <ul class="features-list">
+                  <li><i class="fi fi-rr-check"></i> Fórmula de cálculo de custo cópia</li>
+                  <li><i class="fi fi-rr-check"></i> Análise CMYK detalhada.</li>
+                  <li><i class="fi fi-rr-check"></i> Economia garantida!</li>
+              </ul>
+              <button class="cta-button bigger" onclick="scrollToSection('video-section')">Quero conhecer</button>
+          </div>
+          <div class="image-box">
+              <img src="./assets/logo.png" alt="Ilustração ColorViewer">
+          </div>
+      </div>
   </section>
+  
 
 
 
@@ -64,11 +79,11 @@
       <img src="./assets/imagem.jpg" alt="Imagem de fundo" class="background-image">
       <div class="card-content">
         <span class="tag">
-          <i class="icon-check"></i> Conheça o ColorViewer
+          <p class="tagtext"> Conheça o ColorViewer</p>
         </span>
         <h2>Uma ferramenta feita para você, Gráfica que busca autonomia e controle de custos!</h2>
         <button class="arrow-button">
-          <i class="icon-arrow"></i>
+          <i class="fi fi-br-arrow-alt-right"></i>
         </button>
       </div>
     </div>
@@ -92,22 +107,22 @@
         <div class="card">
           <i class="fi fi-bs-eye-arrow-progress"></i>
           <h3>Controle</h3>
-          <p>Controle os custos das suas impressões de forma fácil e descomplicada</p>
+          <p>Controle os custos das suas impressões de forma fácil e descomplicada!</p>
         </div>
         <div class="card">
-          <i class="fi fi-sr-tachometer-alt-fastest"></i>
-          <h3>Velocidade</h3>
-          <p>Calcule a distruibução de cores de uma imagem em segundos, com poucos cliques</p>
+          <i class="fi fi-rr-gauge-circle-plus"></i>
+          <h3>Agilidade</h3>
+            <p>Calcule a distruibução de cores de uma imagem em segundos, com poucos cliques!</p>
         </div>
         <div class="card">
           <i class="fi fi-br-comment-alt-check"></i>
-          <h3>Simplicidade</h3>
-          <p>Tenha controle e total compreensão dos seus custos de impressão de forma fácil e descomplicada</p>
+          <h3>Objetividade</h3>
+            <p>Tenha controle e total compreensão dos seus custos de impressão de forma intuitiva e rápida!</p>
         </div>
         <div class="card">
-          <i class="fi fi-sr-high-five-celebration-yes"></i>
-          <h3>Amigável</h3>
-          <p>Nada de interfaces complicadas, você tem acesso a tudo no colorviewer com poucos cliques</p>
+          <i class="fi fi-rr-grin"></i>
+          <h3>Eficaz</h3>
+          <p>Nada de interfaces complicadas, você tem acesso a tudo no colorviewer com poucos cliques!</p>
         </div>
 
       </div>
@@ -116,24 +131,24 @@
       <div class="carrossel">
         <div class="carrossel-container">
           <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Benefício 1">
+            <i class="fi fi-bs-eye-arrow-progress"></i>
             <h3>Controle</h3>
-            <p>Controle os custos das suas impressões de forma fácil e descomplicada</p>
+            <p>Controle os custos das suas impressões de forma fácil e descomplicada!</p>
           </div>
           <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Benefício 1">
-            <h3>Velocidade</h3>
-            <p>Calcule a distruibução de cores de uma imagem em segundos, com poucos cliques</p>
+            <i class="fi fi-rr-gauge-circle-plus"></i>
+            <h3>Agilidade</h3>
+              <p>Calcule a distruibução de cores de uma imagem em segundos, com poucos cliques!</p>
           </div>
           <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Benefício 2">
-            <h3>Simplicidade</h3>
-            <p>Tenha controle e total compreensão dos seus custos de impressão de forma fácil e descomplicada</p>
+            <i class="fi fi-br-comment-alt-check"></i>
+            <h3>Objetividade</h3>
+              <p>Tenha controle e total compreensão dos seus custos de impressão de forma intuitiva e rápida!</p>
           </div>
           <div class="card">
-            <i class="fi fi-sr-high-five-celebration-yes"></i>
-            <h3>Amigável</h3>
-            <p>Nada de interfaces complicadas, você tem acesso a tudo no colorviewer com poucos cliques</p>
+            <i class="fi fi-rr-grin"></i>
+            <h3>Eficaz</h3>
+            <p>Nada de interfaces complicadas, você tem acesso a tudo no colorviewer com poucos cliques!</p>
           </div>
         </div>
 
@@ -148,9 +163,10 @@
     </div>
 
   </section>
-  <section class="video-section">
+ 
+  <section class="video-section" id="video-section">
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo de Demonstração" allowfullscreen>
+      <iframe src="https://www.youtube.com/embed/egpQ38UYT1E?si=giqWbvM1MKtsx3ba" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
     </div>
 
@@ -158,30 +174,64 @@
       <h2>Veja o ColorViewer em Ação</h2>
       <p>Assista ao vídeo e descubra como o ColorViewer pode transformar a forma como você gerencia cores e custos de
         impressão.</p>
-      <button class="video-btn">Saiba Mais</button>
+      <button class="video-btn" onclick="scrollToSection('compra')">Saiba Mais</button>
     </div>
   </section>
+  <section class="how-it-works">
+    <h2 class="how-title">Como Funciona o ColorViewer?</h2>
+    <p class="how-subtitle">Otimize seus custos de impressão em apenas 3 passos!</p>
+
+    <div class="steps-container">
+        <div class="step">
+            <div class="icon-box step-one">
+                <i class="fi fi-rr-upload"></i>
+            </div>
+            <h3>1. Envie sua Imagem</h3>
+            <p>Faça o upload da imagem que deseja analisar e deixe o ColorViewer processá-la automaticamente.</p>
+        </div>
+
+        <div class="step">
+            <div class="icon-box step-two">
+                <i class="fi fi-rr-search-alt"></i>
+            </div>
+            <h3>2. Análise Instantânea</h3>
+            <p>O ColorViewer detecta as cores CMYK em segundos.</p>
+        </div>
+
+        <div class="step">
+            <div class="icon-box step-three">
+                <i class="fi fi-rr-check-circle"></i>
+            </div>
+            <h3>3. Veja os Resultados</h3>
+            <p>Receba detalhes precisos sobre a distribuição de cores e economize na impressão.</p>
+        </div>
+    </div>
+
+    <a  class="cta-button" onclick="scrollToSection('compra')">Saber Mais</a>
+</section>
+
+
   <section class="faq-section">
     <h2 class="faq-title">Perguntas Frequentes</h2>
 
     <div class="faq-container">
         <div class="faq-item">
             <button class="faq-question">
-                <span>Como faço para me inscrever?</span>
+                <span>Como faço para adquirir?</span>
                 <i class="faq-icon">+</i>
             </button>
             <div class="faq-answer">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt voluptate nostrum hic repudiandae earum saepe vero recusandae totam consectetur.</p>
+                <p>Clique nos botões e eles te ajudarão a acessar nosso site de compra, venha otimizar seu tempo e dinheiro com o ColorViewer!</p>
             </div>
         </div>
 
         <div class="faq-item">
             <button class="faq-question">
-                <span>O ColorViewer é gratuito?</span>
+                <span>Como funciona o pagamento</span>
                 <i class="faq-icon">+</i>
             </button>
             <div class="faq-answer">
-                <p>O ColorViewer oferece um período de teste gratuito, e depois você pode escolher um plano que melhor atenda suas necessidades.</p>
+                <p>Possuímos métodos flexíveis de pagamento, com parcelamentos em até 12 vezes, Além de uma política de reembolso de 7 dias!</p>
             </div>
         </div>
 
@@ -201,30 +251,30 @@
                 <i class="faq-icon">+</i>
             </button>
             <div class="faq-answer">
-                <p>Sim! Ele é compatível com Windows, macOS e Linux, sem necessidade de instalação complicada.</p>
+                <p>Tudo que você precisa para acessar o ColorViewer é de uma conta do google e um navegador. não perca tempo! Adquira já essa solução!</p>
             </div>
         </div>
     </div>
 </section>
 
   <section class="video-multiple-section">
-    <h2 class="video-title">Veja o ColorViewer em Ação</h2>
+    <h2 class="video-title">Veja como o ColorViewer irá te auxiliar</h2>
 
     <!-- Container para Desktop -->
     <div class="videos-container">
       <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 1" allowfullscreen></iframe>
-        <p>Descubra como o ColorViewer pode transformar sua gestão de cores.</p>
+        <iframe src="https://www.youtube.com/embed/AqxLXl2jvhM?si=0pvSKmZlNraMHUhX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Aprenda como funciona o ColorViewer.</p>
       </div>
 
       <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="Vídeo 2" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/yKRmx9ykoDc?si=SJvypDy9t6Z-yqSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>Aprenda a calcular custos de impressão com precisão.</p>
       </div>
 
       <div class="video-box">
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Vídeo 3" allowfullscreen></iframe>
-        <p>Veja na prática o funcionamento do ColorViewer.</p>
+        <iframe src="https://www.youtube.com/embed/egpQ38UYT1E?si=rNPio7ueCMMEDlbv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Descubra como o ColorViewer vai te ajudar.</p>
       </div>
     </div>
 
@@ -232,18 +282,18 @@
     <div class="carousel">
       <div class="carousel-container">
         <div class="video-box">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 1" allowfullscreen></iframe>
-          <p>Descubra como o ColorViewer pode transformar sua gestão de cores.</p>
+          <iframe src="https://www.youtube.com/embed/AqxLXl2jvhM?si=0pvSKmZlNraMHUhX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Aprenda como funciona o ColorViewer.</p>
         </div>
 
         <div class="video-box">
-          <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="Vídeo 2" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/yKRmx9ykoDc?si=SJvypDy9t6Z-yqSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <p>Aprenda a calcular custos de impressão com precisão.</p>
         </div>
 
         <div class="video-box">
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Vídeo 3" allowfullscreen></iframe>
-          <p>Veja na prática o funcionamento do ColorViewer.</p>
+          <iframe src="https://www.youtube.com/embed/egpQ38UYT1E?si=rNPio7ueCMMEDlbv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Descubra como o ColorViewer vai te ajudar.</p>
         </div>
       </div>
 
@@ -254,7 +304,7 @@
       </div>
     </div>
   </section>
-  <section class="cta-section">
+  <section class="cta-section" id="compra">
     <div class="cta-content">
         <h2>🔥 Oferta Especial por Tempo Limitado!</h2>
         <p>Economize até <strong>30%</strong> nos seus custos de impressão com o ColorViewer. Somente hoje, você pode adquirir com <strong>20% de desconto!</strong></p>
@@ -269,7 +319,7 @@
             </div>
         </div>
 
-        <a href="pagina-de-compra.html" class="cta-button">🔥 Quero Economizar Agora!</a>
+        <a href="pagina-de-compra.html" class="cta-button2">🔥 Quero Economizar Agora!</a>
         <p class="secure-payment">💳 Pagamento 100% seguro | 💰 Garantia de 7 dias</p>
 
      

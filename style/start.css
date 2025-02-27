@@ -28,171 +28,173 @@
       color: #20BF55;
   }
   
-  .start {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    justify-items: center;
-    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: backgroundMove 10s infinite alternate ease-in-out;
-  }
-  
-  .title-start {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    margin-left: 2rem;
-    text-align: center;
-    margin-bottom: 4rem;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .title-start h1 {
-    font-size: 5rem;
-    color: azure;
-    margin-bottom: -1.5rem;
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: fadeInUp 1s ease-out forwards;
-  }
-  
-  .title-start p {
-    font-size: 1.5rem;
-    color: azure;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.5s;
-  }
-  
-  .title-start button {
-    width: 15rem;
-    height: 4rem;
-    border-radius: 0.3rem;
-    border: none;
-    background-color: #e91e63;
-    color: aliceblue;
-    font: 900;
-    font-size: 1.3rem;
-    cursor: pointer;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(-10px);
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 1s;
-  }
-  
-  .title-start button:hover {
-    background-color: #0c4e22;
-    background-color: #991541;
-    transform: scale(1.05);
-  }
-  
-  /* Adiciona um brilho animado ao botão */
-  .title-start button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 0.3rem;
-    background-color: #e91e6271;
-    z-index: -1;
-    filter: blur(8px);
-    animation: glow 3s infinite alternate;
-  }
-  
-  .highlight-cyan {
-    color: cyan;
+/* Seção Inicial */
+.start {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff416c, #ff4b2b);
+  background-size: 300% 300%;
+  animation: gradientBG 8s ease infinite;
+  color: white;
+  padding: 60px 5%;
 }
-.highlight-magenta {
-    color: magenta;
+
+/* Animação do Fundo */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.highlight-yellow {
-    color: yellow;
+
+/* Layout Flexível */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
 }
-.highlight-black {
-    color: black;
+
+/* Texto */
+.text-box {
+  max-width: 600px;
+  animation: fadeInLeft 1.2s ease-out;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+/* Efeitos de Cores no Título */
+.highlight-cyan { color: #00eaff; }
+.highlight-magenta { color: #ff00ff; }
+.highlight-yellow { color: #ffcc00; }
+.highlight-black { color: #000; }
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* Lista de Benefícios */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.features-list li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.features-list i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ffeb3b;
+}
+
+/* Botão de Ação */
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #ffeb3b;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s ease-in-out, background 0.3s;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.title span {
+  display: inline;  /* Mantém os spans no fluxo do texto */
+  margin: 0;  /* Remove margens indesejadas */
+  padding: 0;  /* Remove qualquer padding que possa afetar */
+  letter-spacing: normal;  /* Garante espaçamento padrão entre as letras */
+  word-spacing: normal;  /* Garante que não haja espaçamento extra */
 }
 
 
-  /* Animações */
-  @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Efeito Hover no Botão */
+.cta-button:hover {
+  background: #ffd700;
+  transform: scale(1.05);
+}
+
+/* Imagem */
+.image-box {
+  max-width: 500px;
+  animation: fadeInRight 1.2s ease-out;
+}
+
+.image-box img {
+  width: 80%;
+  border-radius: 10px;
+  
+}
+
+/* Animações */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .content {
+      flex-direction: column-reverse;
+      text-align: center;
   }
-  
-  @keyframes glow {
-    0% {
-        opacity: 0.5;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+
+  .text-box {
+      max-width: 100%;
   }
-  
-  @keyframes backgroundMove {
-    0% {
-        background-position: center;
-    }
-    100% {
-        background-position: top;
-    }
+
+  .image-box {
+      margin-top: 30px;
+      max-width: 80%;
   }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .title-start {
-        width: 80vw;
-        margin-left: 0;
-    }
-  
-    .title-start h1 {
-        font-size: 3rem;
-    }
-  
-    .title-start p {
-        font-size: 1rem;
-        margin-left: 0;
-    }
-  
-    .title-start button {
-        width: 12rem;
-        height: 3.5rem;
-        font-size: 1rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .title {
+      font-size: 36px;
   }
-  
-  @media (max-width: 480px) {
-    .title-start h1 {
-        font-size: 2.5rem;
-    }
-  
-    .title-start p {
-        font-size: 0.9rem;
-    }
-  
-    .title-start button {
-        width: 10rem;
-        height: 3rem;
-        font-size: 0.9rem;
-    }
+
+  .subtitle {
+      font-size: 18px;
   }
+
+  .cta-button {
+      font-size: 18px;
+      padding: 12px 24px;
+  }
+
+  .image-box {
+      max-width: 90%;
+  }
+}

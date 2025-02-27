@@ -77,6 +77,8 @@
 .feature-button i {
     font-size: 1.5rem;
     color: white;
+    margin-top: 1rem;
+
 }
 
 .feature-card:hover .feature-button {
@@ -86,6 +88,12 @@
 
 .tag{
     background-color: #6c5ce7;
+    color: white;
+}
+
+.tag p{
+    margin: 0;
+    color: white;
 }
 
 .arrow-button{
@@ -154,6 +162,7 @@
 
     .feature-text {
         width: 90%;
+        text-align: center;
     }
 
     .cta-button {
