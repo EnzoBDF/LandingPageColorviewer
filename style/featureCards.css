@@ -298,6 +298,8 @@
 @media (max-width: 1024px) {
     .card-content {
         max-width: 85%;
+        bottom: 15px;
+        left: 15px;
     }
 
     .card-content h2 {
@@ -306,8 +308,13 @@
 }
 
 @media (max-width: 768px) {
+    .card-container {
+        width: 90%;
+    }
+
     .card-content {
         max-width: 90%;
+        padding: 1.5rem;
     }
 
     .card-content h2 {
@@ -322,12 +329,14 @@
 
 @media (max-width: 480px) {
     .card-container {
-        width: 90%;
+        width: 100%;
     }
 
     .card-content {
-        max-width: 100%;
-        padding: 1.5rem;
+        max-width: 95%;
+        padding: 1.2rem;
+        left: 10px;
+        bottom: 10px;
     }
 
     .card-content h2 {
@@ -337,5 +346,6 @@
     .arrow-button {
         width: 35px;
         height: 35px;
+        right: -15px;
     }
 }
